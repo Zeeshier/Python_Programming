@@ -6,7 +6,3 @@ app = FastAPI()
 def hello():
     return {"Message" : "Hello World"}
 
-@app.post("/chat")
-def chat(messages : dict):
-    print("Data Received : ", messages) 
-    return messages
